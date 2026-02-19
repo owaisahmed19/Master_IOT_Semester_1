@@ -1,0 +1,93 @@
+
+Exercice 1 :sequential vs. binary search 
+
+Sequential search
+
+*********************************************************************
+Sequentialsearch(String[] tab, String x) : boolean
+variables  i : integer;
+
+Begin
+	i <-- 0;                                        1 ass
+	while (i < tab.length) do                       1 test
+		if (tab[i] = x) then return true;       1 comp + 1 return
+		i <-- i + 1;                            1 add + 1 ass
+	endwhile
+	return false;                                   1 return 
+End
+*********************************************************************
+
+1 ass + (2 + 2 + 1) * n + 1 + 1  = 5n + 3 (exact value)
+
+
+Asymptotic value O(n) 
+
+
+
+
+
+
+
+
+
+variante 2 : binary/dichotomic search 
+
+************************************************************************************
+Function binaryseaach(String[] tab, String x) : boolean
+variables i, j : integer;
+
+Begin
+	i <-- 0;                                                1 ass
+	j <-- tab.length-1;                                     1 ass + 1 sub
+
+	while (i <= j) do                                       1 comp
+		if (tab[(j+i)/2] = x) then return true;         1 add + 1 div + 1 comp + 1 return 
+		else
+			if (tab[(j+i)/2] > x) then j <-- (j+i)/2 - 1; (*move back j*)    3 for the test  + 4 for treatment1
+			else i <-- (j+i)/2 + 1; (*move i*)                               4 for treatment2
+			endif
+		endif
+	endwhile
+
+	return false;                                             1 return 
+End
+***************************************************************************************
+
+
+Worst case: x is not in the array.
+
+nbi: corresponds to the number of loops. 
+
+1 + 2 + (4+max(1,max(4,4)+3)) * nbi + 1 + 1
+1 + 2 + 11 * nbt + 1 + 1 = 11 * nbi + 5
+
+Nbi ? 
+
+* the length  of the table between i and j ?
+  Initially    n 
+  Then         n/2
+  Then         n/2/2 = n/4
+  ...
+  Until      n/2/2/.../2 = n/2^k = 1 (k is the number of divisions) 
+
+How to calculate it ?
+n/2^k = 1  
+n = 2^k  ---> k = ?
+definition of the binary logarithme ? log2 number = K
+
+k = log n 
+
+Total number of operations = 11 * log n + 5 exact value
+
+Asymptotic value O(log n)
+
+
+
+
+
+
+
+
+
+                
+
