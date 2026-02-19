@@ -1,0 +1,4 @@
+https://cours-info.iut-bm.univ-fcomte.fr/index.php/master-iot-1a/embedded-systems
+
+Arduino tasks links:
+https://cours-info.iut-bm.univ-fcomte.fr/index.php/master-iot-1a/embedded-systems/1980-tp-n-2-introducing-the-esp8266
