@@ -1,0 +1,14 @@
+WEEK 1:
+Docker installed (docker desktop)
+docker ps 
+touch docker-compose.yml
+touch mosquitto.conf
+
+docker compose up -d 
+
+npm init --y 
+npm install mqtt 
+touch esp32_a.js
+touch esp32_b_subscriber.js
+
+https://github.com/josephazar/IOT-UMLP-2026
