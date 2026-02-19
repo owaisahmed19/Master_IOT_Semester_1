@@ -1,0 +1,24 @@
+{
+  "window": {
+    "origine": "-100,-80",
+    "size": "1400,1000"
+  },
+  "servers": [
+    { "name": "Tokyo", "position": "300,200", "color": "#8A2BE2" },
+    { "name": "New York", "position": "900,150", "color": "#DC143C" },
+    { "name": "Sydney", "position": "1200,800", "color": "#20B2AA" },
+    { "name": "Dubai", "position": "700,400", "color": "#FFD700" },
+    { "name": "Toronto", "position": "500,120", "color": "#00CED1" },
+    { "name": "Oslo", "position": "350,850", "color": "#32CD32" },
+    { "name": "Lisbon", "position": "150,500", "color": "#FF69B4" }
+  ],
+  "drones": [
+    { "name": "Alex", "position": "100,900", "target": "Tokyo" },
+    { "name": "Luc", "position": "1100,600", "target": "New York" },
+    { "name": "Ken", "position": "750,100", "target": "Dubai" },
+    { "name": "Tom", "position": "50,200", "target": "Toronto" },
+    { "name": "Erik", "position": "400,650", "target": "Oslo" },
+    { "name": "Miguel", "position": "250,300", "target": "Lisbon" },
+    { "name": "Chris", "position": "950,850", "target": "Sydney" }
+  ]
+}
